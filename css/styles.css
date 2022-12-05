@@ -758,6 +758,28 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+.policy-link > a {
+  color: var(--accent-color);
+}
+.checkbox-input {
+  /* appearance: none; */
+}
+.checkbox-input:checked + .check-icon {
+  background-color: blue;
+}
+.check-icon {
+  display: inline-block;
+  background-color: var(--main-background-color);
+  border: 1px solid black;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms var(--cubic-bezier);
+}
+.check-icon:hover,
+.check-icon:focus {
+  background-color: var(--accent-color);
+}
 .modal-submit-btn {
   width: 200px;
   height: 50px;
