@@ -587,7 +587,7 @@ body {
   justify-content: center;
   align-items: center;
   min-width: 231px;
-  margin-right: 70px;
+  margin-right: 93px;
 }
 /* ------------- Форма розсилки --------- */
 .form-subscribe {
@@ -659,12 +659,16 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: transparent;
   border-radius: 4px;
+  display: flex;
+  transition: background-color 250ms var(--cubic-bezier);
 }
 .submit-btn:hover,
 .submit-btn:focus {
-  background-color: var(--accent-color);
+  background-color: var(--secondary-background-color);
 }
 .submit-icon {
+  fill: currentColor;
+  margin-left: 10px;
 }
 /* ------- Backdrop -------- */
 .backdrop {
@@ -752,5 +756,21 @@ body {
   resize: none;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-submit-btn {
+  width: 200px;
+  height: 50px;
+  padding: 10px 52px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
   border-radius: 4px;
 }
