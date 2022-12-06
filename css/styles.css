@@ -47,7 +47,6 @@ body {
   background-color: var(--main-background-color);
 
   font-family: 'Roboto', 'Raleway', sans-serif;
-  color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -783,8 +782,7 @@ body {
   background-color: var(--main-background-color);
   border: 1px solid black;
   border-radius: 4px;
-  align-items: center;
-  justify-content: center;
+  margin-right: 8px;
   transition: background-color var(--cubic-bezier);
 }
 .check-icon:hover,
@@ -792,7 +790,10 @@ body {
   background-color: var(--accent-color);
 }
 .checkbox-label {
-  /* display: block; */
+  font-weight: 400;
+  color: var(--text-color);
+
+  outline: 2px solid tomato;
 }
 .modal-submit-btn {
   width: 200px;
