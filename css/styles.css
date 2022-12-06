@@ -762,7 +762,7 @@ body {
   color: var(--accent-color);
 }
 .checkbox-input {
-  /* appearance: none; */
+  appearance: none;
 }
 .checkbox-input:checked + .check-icon {
   background-color: blue;
