@@ -750,7 +750,7 @@ body {
   padding-bottom: 4px;
 }
 .modal-input {
-  width: 100%;
+  width: 448px;
   height: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -758,7 +758,6 @@ body {
   margin-bottom: 28px;
 }
 .input-icon {
-  /* display: inline-block; */
   position: absolute;
   top: 0;
   left: 15px;
@@ -781,7 +780,7 @@ body {
   appearance: none;
 }
 .checkbox-input:checked + .check-icon {
-  background-color: red;
+  background-color: blue;
 }
 .check-icon {
   display: inline-block;
@@ -797,7 +796,7 @@ body {
   background-color: var(--accent-color);
 }
 .checkbox-label {
-  padding-bottom: 30px;
+  /* display: block; */
 }
 .modal-submit-btn {
   width: 200px;
