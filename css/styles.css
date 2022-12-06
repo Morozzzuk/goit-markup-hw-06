@@ -11,7 +11,7 @@
   --border-color: #eeeeee;
   --info-color: rgba(255, 255, 255, 0.6);
 
-  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic-bezier: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   --main-padding: 94px;
 }
@@ -123,7 +123,7 @@ body {
 .nav-link {
   display: block;
   padding: 32px 0;
-  transition: color 250ms var(--cubic-bezier);
+  transition: color var(--cubic-bezier);
 }
 .header {
   border-bottom: 1px solid #ececec;
@@ -161,7 +161,7 @@ body {
   padding: 32px 0;
   align-items: center;
 
-  transition: color 250ms var(--cubic-bezier);
+  transition: color var(--cubic-bezier);
 }
 .contact-icons {
   fill: currentColor;
@@ -331,40 +331,13 @@ body {
   justify-content: center;
   align-items: center;
 
-  transition: background-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
+  transition: background-color var(--cubic-bezier), fill var(--cubic-bezier);
 }
-/* .command-soc-link:hover {
-  background-color: var(--accent-color);
-}
-.command-soc-icons:hover {
-  fill: var(--secondary-text-color);
-} */
-
 .command-soc-link:hover,
 .command-soc-link:focus {
   background-color: var(--accent-color);
   fill: var(--secondary-text-color);
 }
-
-.command-soc-icons {
-  /* fill: #afb1b8; */
-}
-
-/* .command-soc-link:hover {
-  background-color: var(--accent-color);
-  color: var(--secondary-text-color);
-}
-.command-soc-icons {
-  fill: currentColor;
-} */
-/* .command-soc-link:hover .command-soc-icons {
-  fill: var(--secondary-text-color);
-} */
-
-/* .command-soc-icons:hover,
-.command-soc-icons:focus {
-  fill: var(--secondary-text-color);
-} */
 .command-list {
   display: flex;
 }
@@ -382,7 +355,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* Buttons */
+/* ------- Buttons ---------- */
 .btn {
   border-radius: 4px;
   border: none;
@@ -395,8 +368,8 @@ body {
   font-weight: 500;
   font-family: inherit;
 
-  transition: color 250ms var(--cubic-bezier), background 250ms var(--cubic-bezier),
-    box-shadow 250ms cvar(--cubic-bezier);
+  transition: color var(--cubic-bezier), background var(--cubic-bezier),
+    box-shadow var(--cubic-bezier);
 }
 .btn:hover,
 .btn:focus {
@@ -429,7 +402,7 @@ body {
   border: 1px solid var(--third-text-color);
   border-radius: 4px;
 
-  transition: border-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
+  transition: border-color var(--cubic-bezier), fill var(--cubic-bezier);
 }
 .clients-link:hover,
 .clients-link:focus,
@@ -468,7 +441,7 @@ body {
 }
 .project-link {
   display: block;
-  transition: box-shadow 250ms var(--cubic-bezier);
+  transition: transform var(--cubic-bezier);
 }
 .project-link:hover,
 .project-link:focus {
@@ -493,7 +466,7 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform 250ms var(--cubic-bezier);
+  transition: transform var(--cubic-bezier);
 }
 .project-desc {
   width: 100%;
@@ -535,7 +508,7 @@ body {
 
   text-decoration: none;
 
-  transition: color 250ms var(--cubic-bezier);
+  transition: color var(--cubic-bezier);
 }
 .footer-contact:hover,
 .footer-contact:focus {
@@ -569,7 +542,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  transition: background-color 250ms var(--cubic-bezier);
+  transition: background-color var(--cubic-bezier);
 }
 .social-link:hover,
 .social-link:focus {
@@ -660,7 +633,7 @@ body {
   border: transparent;
   border-radius: 4px;
   display: flex;
-  transition: background-color 250ms var(--cubic-bezier);
+  transition: background-color var(--cubic-bezier);
 }
 .submit-btn:hover,
 .submit-btn:focus {
@@ -681,14 +654,14 @@ body {
 
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms var(--cubic-bezier), visibility 250ms var(--cubic-bezier);
+  transition: opacity var(--cubic-bezier), visibility var(--cubic-bezier);
 }
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
-  transition: transform 250ms var(--cubic-bezier);
+  transition: transform var(--cubic-bezier);
 
   width: 528px;
   height: 581px;
@@ -714,6 +687,7 @@ body {
   align-items: center;
 
   background-color: var(--main-background-color);
+  transition: fill var(--cubic-bezier);
 }
 .close-tag:hover,
 .close-tag:focus {
@@ -761,7 +735,7 @@ body {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
+  transition: border-color var(--cubic-bezier), fill var(--cubic-bezier);
   outline: none;
 }
 .input-icon {
@@ -775,9 +749,6 @@ body {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
-/* .input-icon:hover {
-  fill: var(--accent-color);
-} */
 .modal-textarea-group {
   margin-bottom: 20px;
 }
@@ -790,6 +761,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  transition: border-color var(--cubic-bezier);
 }
 .modal-text:focus {
   border-color: var(--accent-color);
@@ -813,7 +785,7 @@ body {
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms var(--cubic-bezier);
+  transition: background-color var(--cubic-bezier);
 }
 .check-icon:hover,
 .check-icon:focus {
