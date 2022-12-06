@@ -762,6 +762,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
+  outline: none;
 }
 .input-icon {
   position: absolute;
@@ -769,10 +770,8 @@ body {
   bottom: 11px;
   display: inline-block;
 }
-.modal-input:hover,
 .modal-input:focus,
-.modal-input:hover .input-icon,
-.modal-input:focus .input-icon {
+.modal-input:focus + .input-icon {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -790,6 +789,10 @@ body {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
+}
+.modal-text:focus {
+  border-color: var(--accent-color);
 }
 .modal-checkbox-group {
   margin-bottom: 30px;
