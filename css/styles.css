@@ -774,7 +774,17 @@ body {
   color: var(--accent-color);
   margin-left: 2px;
 }
-
+.checkbox-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 52px;
+  width: 120px;
+  height: 2px;
+  background-color: var(--accent-color);
+  border: 1px;
+  transform: translateY(-118px);
+}
 .checkbox-input {
   -webkit-appearance: none;
   -moz-appearance: none;
