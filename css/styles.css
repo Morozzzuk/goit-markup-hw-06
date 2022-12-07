@@ -770,10 +770,11 @@ body {
 .modal-checkbox-group {
   margin-bottom: 30px;
 }
-.policy-link > a {
+.checkbox-link {
   color: var(--accent-color);
   margin-left: 2px;
 }
+
 .checkbox-input {
   -webkit-appearance: none;
   -moz-appearance: none;
