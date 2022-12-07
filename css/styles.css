@@ -737,6 +737,7 @@ body {
   border-radius: 4px;
   transition: border-color var(--cubic-bezier), fill var(--cubic-bezier);
   outline: none;
+  padding-left: 35px;
 }
 .input-icon {
   position: absolute;
@@ -771,6 +772,7 @@ body {
 }
 .policy-link > a {
   color: var(--accent-color);
+  margin-left: 2px;
 }
 .checkbox-input {
   -webkit-appearance: none;
