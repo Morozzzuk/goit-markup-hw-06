@@ -772,6 +772,8 @@ body {
   color: var(--accent-color);
 }
 .checkbox-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 .checkbox-input:checked + .check-icon {
